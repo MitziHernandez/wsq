@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int gcd(int a, int b)
+{
+  int c;
+  if (a==0)
+  return b;
+  else
+  return a*b;
+
+  if (b==0)
+  return a;
+
+  if (a==b)
+  return a;
+  else
+  while (b=!0)
+  {
+    c=b;
+    b=a%b;
+    a=b;
+    cout << b << endl;
+  }
+    return a;
+}
+int main()
+{
+  int a,b, resultado;
+  cout<< "ingresa el primer numero" <<endl;
+  cin>> a;
+  cout<< "ingrese el segundo numero" << endl;
+  cin>> b;
+  resultado=gcd(a,b);
+  cout<< "el resultado es " << resultado << endl;
+return 0;
+}
