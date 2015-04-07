@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+  char o;
+  do
+  {
+    int n, factorial;
+    cout<< "ingrese un numero positivo " <<endl;
+    cin>> n;
+    factorial=n;
+    for(int i=n-1; i>0; i--)
+    {
+      factorial=factorial*i;
+    }
+    cout<< "el resultado es " << factorial << endl;
+    cout<< " quieres probar otro numero? s/n " << endl;
+    cin>> o;
+  } while (o=='s');
+  cout<< "que tenga buen dia " << endl;
+
+  return 0;
+}
