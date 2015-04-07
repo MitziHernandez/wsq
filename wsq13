@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+float sqrt (float num)
+{
+  float numero_guess,error;
+  error = 0.0000001;
+  numero_guess=number;
+  while ((numero_guess-num/numero_guess) > error)
+  {
+    numero_guess = (numero_guess + num/numero_guess)/2;
+    cout << (numero_guess + num/numero_guess)/2 ;
+  }
+return numero_guess;
+}
+int main ()
+{
+  float num,resultado;
+  cout << "ingrese un numero: " << endl;
+  cin >> num;
+  resultado= sqrt (num);
+  cout << "The squirt of the: " << num << "is :" << resultado << endl;
+return 0;
+}
