@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+double calcular(int n){
+  double e = 2.0;
+  double factorial = 1;
+  for (int i=2; i<n; i++){
+  factorial *= i;
+  e += 1/factorial;
+  }
+return e;
+}
+
+
+int main(){
+
+int pres;
+
+cout << "ingresa el numero de decimales que quieres " << endl;
+cin >> pres;
+
+cout << "Valor es: " << setprecision(precision+1) << calcular(100) << endl;
+return 0;
+}
